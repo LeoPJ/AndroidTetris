@@ -1,5 +1,6 @@
 package com.uestc.androidtetris;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     Timer timer;
     int stop = 0;
+    @SuppressLint("HandlerLeak")
     Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -263,6 +265,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         grade = intent.getIntExtra("grade", 3);
 
+        //根据游戏难度确定下落的速度
         switch (grade) {
             case 1:
                 timeInterval=1200;
@@ -310,7 +313,7 @@ public class MainActivity extends AppCompatActivity {
         maxScoreTextView.setText("最高分：" + highestScore);
         scoreTextView.setText("分数："+score);
         levelTextView.setText("等级：" + grade);
-        speedTextView.setText("速度：" +1000.0 / timeInterval);
+        speedTextView.setText("速度：" +String.format("%.2f",(1000.0 / timeInterval)));
 
 
         leftMove.setOnClickListener(new View.OnClickListener() {
@@ -530,7 +533,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     int leftMath(int a, int b) {
-        //之前一直不显示是因为这里搞反了，所出来的都是0,所以每次改一点代码都需要测试一下才能保存
         if (b < 0) {
             return a >> -b;
         } else {

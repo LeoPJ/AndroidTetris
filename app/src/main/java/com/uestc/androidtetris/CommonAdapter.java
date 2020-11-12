@@ -10,9 +10,7 @@ import android.widget.GridView;
 
 import java.util.List;
 
-/**
- * Created by Lucky_Xiao on 2016/5/15.
- */
+
 public abstract class CommonAdapter<T> extends BaseAdapter {
 
     private final LayoutInflater mInflater;

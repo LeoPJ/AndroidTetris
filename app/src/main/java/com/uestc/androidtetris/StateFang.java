@@ -1,9 +1,5 @@
 package com.uestc.androidtetris;
 
-/**
- * Created by dell on 2018/3/26.
- */
-
 public class StateFang {
     public static int[] color = new int[]{
             R.drawable.star_b, R.drawable.star_g, R.drawable.star_p, R.drawable.star_r, R.drawable.star_y

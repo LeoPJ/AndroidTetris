@@ -8,7 +8,6 @@ import java.util.Set;
 
 /**
  * 缓存
- * Created by Lucky_Xiao on 2016/7/8.
  * SharedPreferences的简单封装
  */
 public class CacheUtils {

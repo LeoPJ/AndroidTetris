@@ -11,9 +11,6 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-/**
- * Created by dell on 2018/3/23.
- */
 
 public class BlockAdapter extends CommonAdapter {
     Context context;

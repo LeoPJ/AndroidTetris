@@ -8,9 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by dell on 2018/3/29.
- */
 
 public class SelectActivity extends AppCompatActivity implements View.OnClickListener {
     Button grade1,grade2,grade3,grade4, grade5;

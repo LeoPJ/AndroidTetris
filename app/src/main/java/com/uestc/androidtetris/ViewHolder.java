@@ -6,9 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Lucky_Xiao on 2016/5/15.
- */
 public class ViewHolder {
 
 

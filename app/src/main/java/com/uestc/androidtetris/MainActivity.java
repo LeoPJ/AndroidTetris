@@ -474,14 +474,9 @@ public class MainActivity extends AppCompatActivity {
         nextTetrisAdapter = new BlockAdapter(MainActivity.this, nextTetrisList, R.layout.item_adapter);
         nextTetrisView.setAdapter(nextTetrisAdapter);
 
-
         Log.i(TAG, rand + "");
 //        Toast.makeText(MainActivity.this, rand + "", Toast.LENGTH_LONG);
 //        qu = StateFang.shape[rand];
-
-
-
-
 
         timer=new Timer();
         timer.schedule(new TimerTask() {
@@ -490,12 +485,6 @@ public class MainActivity extends AppCompatActivity {
                 handler.sendEmptyMessage(0);
             }
         },0,timeInterval);
-
-
-
-
-
-
 
     }
 

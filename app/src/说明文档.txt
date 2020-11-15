@@ -1,0 +1,8 @@
+定义的功能类在./main/java/com/uestc/androidtetris/文件夹下，主要的类有：
+	MainActivity.java:定义游戏页面的功能，包括游戏方块的初始化与持续性的生成、根据游戏难度确定下落的速度、检测是否可以按要求移动、移动与旋转功能的坐标变换、得分的判读与方格消除处理、游戏暂停和继续等
+	SelectActivity.java:定义开始页面的等级选择功能
+	StateFang.java:定义方格的样式和初始化位置坐标
+
+方块格子的图案存放在./main/res/drawable/文件夹下，同时button_circle_shape.xml作为生成圆弧型按钮的背景布局也存放在这里
+页面布局xml代码存放在./main/res/layout/文件夹下，activity_game.xml是游戏页面的布局，activity_select.xml是游戏开始等级选择页面的布局，item_adapter.xml是游戏界面里一个格子的样式
+
